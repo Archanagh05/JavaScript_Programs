@@ -1,0 +1,10 @@
+let a = 10
+let b = 20
+let c = "ABC"
+let d = "PQR"
+let e = a + b
+let f = c + d
+console.log("addition=" + e)
+console.log("concatenation=" + f)
+console.log("Data type of a=" + typeof a)
+console.log("Data type of c=" + typeof c)
