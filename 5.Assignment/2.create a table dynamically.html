@@ -1,0 +1,74 @@
+<html>
+
+<head>
+    <script>
+        function Show() {
+            let ob = document.getElementById('t1')
+            let ob2 = document.getElementById('t2')
+            let ob3 = document.getElementById('t3')
+            let ob4 = document.getElementById('t4')
+            let ob5 = document.getElementById('t5')
+            let ob6 = document.getElementById('t6')
+
+            let a = ob.value
+            let b = ob2.value
+            let c = ob3.value
+            let d = ob4.value
+            let e = ob5.value
+            let f = ob6.value
+
+            let mytable = document.getElementById('table1')
+
+            let rw = document.createElement('tr')
+
+            // rw.style.backgroundColor('green')
+
+            let c1 = document.createElement('td')
+            let c2 = document.createElement('td')
+            let c3 = document.createElement('td')
+            let c4 = document.createElement('td')
+            let c5 = document.createElement('td')
+            let c6 = document.createElement('td')
+
+            c1.innerText = a
+            c2.innerText = b
+            c3.innerText = c
+            c4.innerText = d
+            c5.innerText = e
+            c6.innerText = f
+
+            rw.append(c1)
+            rw.append(c2)
+            rw.append(c3)
+            rw.append(c4)
+            rw.append(c5)
+            rw.append(c6)
+
+            mytable.append(rw)
+
+        }
+    </script>
+</head>
+
+<body>
+    Date/Time = <input type="text" id="t1" value=""> City = <input type="text" id="t2" value=""> State = <input type="text" id="t3" value=""> Country = <input type="text" id="t4" value=""> Shape = <input type="text" id="t5" value=""> Comment =
+    <input type="text" id="t6" value="">
+    <br>
+    <br>
+    <br>
+    <input type="button" value=" Add " onclick="Show()">
+    <br>
+    <br>
+
+
+    <table border="2" id="table1">
+        <th style="background-color: skyblue; color: black;"> Date/Time</th>
+        <th style="background-color: skyblue; color: black;"> City</th>
+        <th style="background-color: skyblue; color: black;"> State</th>
+        <th style="background-color: skyblue; color: black;">Country</th>
+        <th style="background-color: skyblue; color: black;"> Shape</th>
+        <th style="background-color: skyblue; color: black;"> Comment</th>
+    </table>
+</body>
+
+</html>

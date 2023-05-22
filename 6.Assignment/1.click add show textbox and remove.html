@@ -1,0 +1,26 @@
+<html>
+
+<head>
+    <script>
+        function show() {
+            let ob = document.createElement('input')
+            ob.setAttribute("type", "text")
+            ob.setAttribute("id", "t1")
+            document.body.append(ob)
+        }
+
+        function Discard() {
+            let ob2 = document.getElementById('t1')
+            setTimeout(() => ob2.remove(), 2000)
+
+        }
+    </script>
+</head>
+
+<body>
+    <input type="button" value="Add" id="b1" onclick="show()">
+
+    <input type="button" value="Remove" id="b2" onclick="Discard()">
+</body>
+
+</html>

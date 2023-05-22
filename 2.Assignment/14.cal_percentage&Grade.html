@@ -1,0 +1,45 @@
+<html>
+
+<head>
+
+    <script>
+        let Physics = Number(prompt("enter your marks of physics = "))
+        let Chemistry = Number(prompt("enter your marks of Chemistry = "))
+        let Bio = Number(prompt("enter your marks of Biology ="))
+        let Math = Number(prompt("enter your marks of Mathematics = "))
+        let computer = Number(prompt("enter your marks of computer = "))
+
+        let sum = Physics + Chemistry + Bio + Math + computer
+        let per = sum / 5
+
+        alert(" Physics = " + Physics)
+        alert(" Chemistry = " + Chemistry)
+        alert(" Bio = " + Bio)
+        alert(" Math = " + Math)
+        alert(" computer = " + computer)
+        alert("Percentage : " + per)
+
+        if (per >= 90) {
+            alert(" Grade = A")
+        }
+
+        if (per >= 80) {
+            alert(" Grade = B")
+        }
+        if (per >= 70) {
+            alert(" Grade = c")
+        }
+
+        if (per >= 60) {
+            alert(" Grade = D")
+        }
+        if (per >= 40) {
+            alert(" Grade = E")
+        }
+        if (per < 40) {
+            alert(" Grade = F")
+        }
+    </script>
+</head>
+
+</html>

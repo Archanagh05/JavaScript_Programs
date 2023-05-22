@@ -1,0 +1,45 @@
+<html>
+
+<head>
+    <script>
+        let f = 'number'
+
+        function radio1() {
+            f = 'number'
+        }
+
+        function radio2() {
+            f = 'character'
+        }
+
+        function show() {
+            let ob = document.getElementById('t1')
+            let c = ob.value
+
+            let ob1 = document.getElementById('l1')
+            let lst = document.createElement('li')
+
+            if (f == 'character') {
+                lst.setAttribute('type', 'A')
+            }
+            lst.innerText = c
+            ob1.append(lst)
+        }
+    </script>
+</head>
+
+<body>
+    <input type="text" id="t1">
+    <input type="radio" name="type" value="number" onclick="radio1()"><label> number</label>
+    <input type="radio" name="type" value="character" onclick="radio2()"> <label> character</label>
+
+    <br>
+    <br>
+    <input type="button" value="add to the list" onclick="show()">
+
+    <br>
+    <br>
+    <ol id="l1"> </ol>
+</body>
+
+</html>

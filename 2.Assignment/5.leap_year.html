@@ -1,0 +1,23 @@
+<html>
+
+<head>
+
+    <script>
+        let year = Number(prompt("Enter any year : "))
+
+        // The year is multiple of 400.
+        // The year is multiple of 4 and not multiple of 100
+
+        if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0) {
+            alert("leap year")
+        } else {
+            alert("Not leap year")
+        }
+    </script>
+
+    <body>
+
+    </body>
+</head>
+
+</html>

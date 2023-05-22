@@ -1,0 +1,28 @@
+<html>
+
+<head>
+
+    <script>
+        let actual_amt = Number(prompt("enter actual ammount of the product = "))
+        let selling_price = Number(prompt("enter selling price of the product = "))
+
+        if (actual_amt > selling_price) {
+            let a = actual_amt - selling_price
+            let profit = (a / actual_amt) * 100
+
+            alert(" profit = " + profit)
+        } else if (actual_amt < selling_price) {
+            let b = selling_price - actual_amt
+            let loss = (b / actual_amt) * 100
+            alert(" Loss =" + loss)
+        } else if (actual_amt == selling_price) {
+            alert(" No profit No loss")
+        }
+    </script>
+
+    <body>
+
+    </body>
+</head>
+
+</html>
