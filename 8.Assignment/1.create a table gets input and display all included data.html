@@ -1,0 +1,97 @@
+<html>
+
+<head>
+    <script>
+        let a = "male"
+
+        function r1() {
+            a = "Male"
+        }
+
+        function r2() {
+            a = "Female"
+        }
+
+        function show() {
+
+            let ob = document.getElementById('t1')
+            let ob1 = document.getElementById('t2')
+            let ob2 = document.getElementById('t3')
+
+            let c = ob.value
+            let c1 = ob1.value
+            let c2 = ob2.value
+
+            let table2 = document.getElementById('table2')
+            let row = document.createElement('tr')
+            let v1 = document.createElement('td')
+            let v2 = document.createElement('td')
+            let v3 = document.createElement('td')
+            let v4 = document.createElement('td')
+
+            v1.innerText = c
+            v2.innerText = c1
+            v3.innerText = c2
+            v4.innerText = a
+
+            row.append(v1)
+            row.append(v2)
+            row.append(v3)
+            row.append(v4)
+
+            table2.append(row)
+
+        }
+    </script>
+</head>
+
+<body>
+    <table border="1" id="table1" title="STUDENT INFORMATION" style="border: solid;
+             margin-top: 50px; margin-left: 580px; background-color: deepskyblue;">
+
+        <th style="background-color:  darkblue; color: white; padding: 15PX; font-size:large;"> STUDENT INFORMATION</th>
+
+        <tr style="background-color: deepskyblue;">
+            <td><label style="padding: 25px;"> Name  </label>
+                <input type="text" id="t1"> </td>
+        </tr>
+
+        <tr style="background-color: deepskyblue;">
+            <td><label style="padding: 25px;"> Email </label>
+                <input type="text" id="t2"></td>
+        </tr>
+
+        <tr style="background-color:deepskyblue;">
+            <td><label style="padding: 25px;"> Phone  </label>
+                <input type="text" id="t3"></td>
+        </tr>
+
+        <tr style="background-color:  deepskyblue;">
+            <td><label style="padding: 25px;">Gender </label>
+                <input type="radio" name="gender" value="Male" onclick="r1()"><label>Male</label>
+                <input type="radio" name="gender" value="Female" onclick="r2()"><label>Female</label> </td>
+        </tr>
+        <tr style="background-color:deepskyblue;">
+
+            <td><input type="button" value="OK" onclick="show()" style="background-color: darkblue; color: aqua;
+                 margin-left: 110px; border: solid;border-color: lightblue;"></td>
+            <td style="background-color: deepskyblue;"></td>
+
+        </tr>
+
+    </table>
+    <br>
+    <br>
+    <br>
+    <!-- <div id="d1" style=" margin-left: 580px;"> -->
+    <table id="table2" border="1" style="margin-left: 480px; background-color: plum;">
+        <TH id="h1" style="background-color: darkviolet; font-style: initial;font-size: 15px; color: azure; padding: 8px;">Name</TH>
+        <th id="h2" style="background-color: darkviolet; font-style: initial;font-size: 15px; color: azure; padding: 8px;">Email</th>
+        <th id="h3" style="background-color: darkviolet; font-style: initial;font-size: 15px; color: azure; padding: 8px;">Pnone</th>
+        <th id="h4" style="background-color: darkviolet; font-style: initial;font-size: 15px; color: azure; padding: 8px;">Gender</th>
+
+    </table>
+    </div>
+</body>
+
+</html>
